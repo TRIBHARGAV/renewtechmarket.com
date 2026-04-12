@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Renew Tech Market – Best Refurbished Laptops & Mobiles in Guntur. Laptop Repair, SSD Upgrade, OS Installation, Data Recovery. Tested & Warranted Products.">
+<meta name="keywords" content="refurbished laptops in Guntur, laptop repair near me Guntur, used laptops best price Guntur, refurbished mobiles Guntur, laptop upgrade Guntur, laptop repair Arundelpet">
+<title>Renew Tech Market – Refurbished Laptops & Mobiles, Guntur</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --green: #1faa3a;
+  --green-dark: #157a2a;
+  --green-light: #d4f5dc;
+  --blue: #1a4fa0;
+  --blue-dark: #0f3070;
+  --blue-light: #dde9ff;
+  --navy: #0f1f3d;
+  --white: #ffffff;
+  --off-white: #f5f9f5;
+  --gray: #6b7280;
+  --light-gray: #e8edf2;
+  --dark: #1a1f2e;
+  --shadow: 0 4px 24px rgba(26,79,160,0.10);
+  --shadow-lg: 0 8px 40px rgba(26,79,160,0.16);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--off-white);
+  color: var(--dark);
+  overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5 { font-family: 'Rajdhani', sans-serif; letter-spacing: 0.02em; }
+
+/* ── PAGE SECTIONS ── */
+.page { display: none; }
+.page.active { display: block; }
+
+/* ── NAVBAR ── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  background: var(--white);
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 5%;
+  height: 68px;
+}
+
+.nav-logo {
+  display: flex; align-items: center; gap: 10px; text-decoration: none;
+}
+.nav-logo img { height: 44px; }
+.nav-logo-text { font-family: 'Rajdhani', sans-serif; font-size: 1.3rem; font-weight: 700; }
+.nav-logo-text span:first-child { color: var(--green); }
+.nav-logo-text span:last-child { color: var(--blue); }
+
+.nav-links {
+  display: flex; gap: 6px; list-style: none;
+}
+.nav-links a {
+  padding: 8px 16px; border-radius: 8px;
+  text-decoration: none; font-weight: 500; font-size: 0.95rem;
+  color: var(--dark); transition: all 0.2s;
+}
+.nav-links a:hover, .nav-links a.active {
+  background: var(--green-light); color: var(--green-dark);
+}
+
+.nav-cta {
+  display: flex; gap: 10px;
+}
+.btn { display: inline-flex; align-items: center; gap: 7px; padding: 10px 20px; border-radius: 10px; font-weight: 600; font-size: 0.9rem; text-decoration: none; border: none; cursor: pointer; transition: all 0.2s; font-family: 'DM Sans', sans-serif; }
+.btn-green { background: var(--green); color: white; }
+.btn-green:hover { background: var(--green-dark); transform: translateY(-1px); box-shadow: 0 4px 16px rgba(31,170,58,0.3); }
+.btn-blue { background: var(--blue); color: white; }
+.btn-blue:hover { background: var(--blue-dark); transform: translateY(-1px); box-shadow: 0 4px 16px rgba(26,79,160,0.3); }
+.btn-outline { background: transparent; color: var(--blue); border: 2px solid var(--blue); }
+.btn-outline:hover { background: var(--blue); color: white; }
+.btn-lg { padding: 14px 28px; font-size: 1rem; border-radius: 12px; }
+.btn-whatsapp { background: #25D366; color: white; }
+.btn-whatsapp:hover { background: #1ebe5d; transform: translateY(-1px); box-shadow: 0 4px 16px rgba(37,211,102,0.35); }
+
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 5px; }
+.hamburger span { width: 26px; height: 3px; background: var(--dark); border-radius: 2px; transition: all 0.3s; }
+
+/* ── MOBILE NAV ── */
+.mobile-menu {
+  display: none; position: fixed; top: 68px; left: 0; right: 0; z-index: 999;
+  background: white; padding: 20px; box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  flex-direction: column; gap: 8px;
+}
+.mobile-menu.open { display: flex; }
+.mobile-menu a { padding: 12px 16px; border-radius: 10px; text-decoration: none; font-weight: 500; color: var(--dark); }
+.mobile-menu a:hover { background: var(--green-light); color: var(--green-dark); }
+.mobile-menu .btn { justify-content: center; }
+
+/* ── SPACER ── */
+.spacer { height: 68px; }
+
+/* ── HERO ── */
+.hero {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--blue-dark) 50%, #1a3a6e 100%);
+  color: white; padding: 80px 5% 70px; position: relative; overflow: hidden;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
+  min-height: 520px;
+}
+.hero::before {
+  content: ''; position: absolute; top: -60px; right: -60px;
+  width: 400px; height: 400px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(31,170,58,0.18) 0%, transparent 70%);
+}
+.hero::after {
+  content: ''; position: absolute; bottom: -80px; left: 20%;
+  width: 300px; height: 300px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(26,79,160,0.25) 0%, transparent 70%);
+}
+
+.hero-content { position: relative; z-index: 1; }
+.hero-badge {
+  display: inline-block; background: rgba(31,170,58,0.2); border: 1px solid rgba(31,170,58,0.5);
+  color: #6be88b; padding: 6px 14px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 16px;
+}
+.hero h1 { font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 700; line-height: 1.15; margin-bottom: 18px; }
+.hero h1 .green { color: #6be88b; }
+.hero h1 .highlight { color: #7db8ff; }
+.hero p { font-size: 1.05rem; color: rgba(255,255,255,0.82); line-height: 1.7; margin-bottom: 30px; max-width: 480px; }
+.hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+
+.hero-visual { position: relative; z-index: 1; display: flex; justify-content: center; }
+.hero-card {
+  background: rgba(255,255,255,0.08); backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.15); border-radius: 20px;
+  padding: 28px; width: 100%; max-width: 380px;
+}
+.hero-card h3 { font-size: 1.1rem; margin-bottom: 16px; color: rgba(255,255,255,0.9); }
+.trust-items { display: flex; flex-direction: column; gap: 12px; }
+.trust-item {
+  display: flex; align-items: center; gap: 12px;
+  background: rgba(255,255,255,0.06); border-radius: 12px; padding: 12px 16px;
+}
+.trust-icon { font-size: 1.5rem; }
+.trust-item p { font-size: 0.88rem; color: rgba(255,255,255,0.85); font-weight: 500; }
+
+/* ── SECTION COMMON ── */
+section { padding: 70px 5%; }
+.section-label {
+  display: inline-block; background: var(--green-light); color: var(--green-dark);
+  padding: 5px 14px; border-radius: 20px; font-size: 0.78rem; font-weight: 600;
+  letter-spacing: 0.07em; text-transform: uppercase; margin-bottom: 10px;
+}
+.section-title { font-size: clamp(1.7rem, 3vw, 2.4rem); font-weight: 700; color: var(--navy); margin-bottom: 10px; }
+.section-sub { color: var(--gray); font-size: 1rem; max-width: 560px; line-height: 1.65; margin-bottom: 40px; }
+.section-header { text-align: center; }
+.section-header .section-sub { margin: 0 auto 40px; }
+
+/* ── PRODUCTS ── */
+.products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; }
+
+.product-card {
+  background: white; border-radius: 18px; overflow: hidden;
+  box-shadow: var(--shadow); transition: all 0.3s; border: 1px solid var(--light-gray);
+}
+.product-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+
+.product-img {
+  background: linear-gradient(135deg, #e8f4ff 0%, #d4f5dc 100%);
+  height: 200px; display: flex; align-items: center; justify-content: center;
+  font-size: 4rem; position: relative; overflow: hidden;
+}
+.product-img img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  transition: transform 0.35s ease;
+}
+.product-card:hover .product-img img { transform: scale(1.05); }
+.product-badge {
+  position: absolute; top: 12px; left: 12px;
+  background: var(--green); color: white; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600;
+}
+.product-body { padding: 20px; }
+.product-name { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; color: var(--navy); }
+.product-specs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+.spec-tag {
+  background: var(--light-gray); color: var(--gray); padding: 3px 9px; border-radius: 6px; font-size: 0.78rem; font-weight: 500;
+}
+.product-footer { display: flex; align-items: center; justify-content: space-between; }
+.product-price { font-family: 'Rajdhani', sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--green-dark); }
+.product-warranty { font-size: 0.78rem; color: var(--gray); display: flex; align-items: center; gap: 4px; }
+
+/* ── SERVICES ── */
+.services-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 24px; }
+.service-card {
+  background: white; border-radius: 18px; padding: 28px 24px;
+  box-shadow: var(--shadow); border: 1px solid var(--light-gray);
+  transition: all 0.3s; text-align: center;
+}
+.service-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--green); }
+.service-icon { font-size: 2.6rem; margin-bottom: 14px; }
+.service-card h3 { font-size: 1.15rem; margin-bottom: 8px; color: var(--navy); }
+.service-card p { font-size: 0.9rem; color: var(--gray); line-height: 1.6; }
+
+/* ── WHY US ── */
+.why-section { background: linear-gradient(135deg, var(--navy) 0%, var(--blue-dark) 100%); color: white; }
+.why-section .section-title { color: white; }
+.why-section .section-label { background: rgba(31,170,58,0.2); color: #6be88b; }
+.why-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 24px; }
+.why-card {
+  background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 18px; padding: 28px 22px; text-align: center;
+}
+.why-card .icon { font-size: 2.4rem; margin-bottom: 12px; }
+.why-card h3 { font-size: 1.1rem; margin-bottom: 6px; color: white; }
+.why-card p { font-size: 0.88rem; color: rgba(255,255,255,0.72); line-height: 1.6; }
+
+/* ── REVIEWS ── */
+.reviews-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 22px; }
+.review-card {
+  background: white; border-radius: 18px; padding: 26px; box-shadow: var(--shadow);
+  border: 1px solid var(--light-gray);
+}
+.stars { color: #f59e0b; font-size: 1.1rem; margin-bottom: 10px; }
+.review-card p { font-size: 0.93rem; color: var(--gray); line-height: 1.65; margin-bottom: 16px; }
+.reviewer { display: flex; align-items: center; gap: 12px; }
+.avatar { width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, var(--green) 0%, var(--blue) 100%); display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1rem; }
+.reviewer-info strong { display: block; font-size: 0.9rem; color: var(--dark); }
+.reviewer-info span { font-size: 0.8rem; color: var(--gray); }
+
+/* ── CONTACT ── */
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: start; }
+.contact-info { display: flex; flex-direction: column; gap: 20px; }
+.contact-item {
+  display: flex; gap: 16px; align-items: flex-start;
+  background: white; padding: 20px; border-radius: 16px; box-shadow: var(--shadow);
+}
+.contact-icon {
+  width: 46px; height: 46px; border-radius: 12px; background: var(--green-light);
+  display: flex; align-items: center; justify-content: center; font-size: 1.4rem; flex-shrink: 0;
+}
+.contact-item h4 { font-size: 0.85rem; color: var(--gray); margin-bottom: 3px; font-family: 'DM Sans', sans-serif; font-weight: 500; }
+.contact-item p, .contact-item a { font-size: 0.97rem; font-weight: 600; color: var(--dark); text-decoration: none; }
+.contact-item a:hover { color: var(--green); }
+
+.contact-form {
+  background: white; border-radius: 20px; padding: 36px; box-shadow: var(--shadow-lg);
+}
+.contact-form h3 { font-size: 1.5rem; margin-bottom: 24px; color: var(--navy); }
+.form-group { margin-bottom: 16px; }
+.form-group label { display: block; font-size: 0.87rem; font-weight: 600; color: var(--dark); margin-bottom: 6px; }
+.form-group input, .form-group textarea, .form-group select {
+  width: 100%; padding: 12px 16px; border: 1.5px solid var(--light-gray);
+  border-radius: 10px; font-size: 0.95rem; font-family: 'DM Sans', sans-serif;
+  color: var(--dark); transition: border-color 0.2s; background: var(--off-white);
+}
+.form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+  outline: none; border-color: var(--green); background: white;
+}
+.form-group textarea { resize: vertical; min-height: 110px; }
+.form-submit { width: 100%; }
+
+/* ── MAP ── */
+.map-wrapper { border-radius: 16px; overflow: hidden; box-shadow: var(--shadow); }
+.map-wrapper iframe { display: block; }
+
+/* ── ABOUT ── */
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.about-content .section-sub { margin-bottom: 24px; }
+.about-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 30px; }
+.stat-box {
+  background: white; border-radius: 14px; padding: 20px; text-align: center; box-shadow: var(--shadow);
+}
+.stat-num { font-family: 'Rajdhani', sans-serif; font-size: 2.2rem; font-weight: 700; color: var(--green); }
+.stat-label { font-size: 0.84rem; color: var(--gray); }
+.about-visual {
+  background: linear-gradient(135deg, var(--green-light) 0%, var(--blue-light) 100%);
+  border-radius: 24px; padding: 40px; display: flex; flex-direction: column; gap: 16px;
+}
+.about-feature { display: flex; align-items: center; gap: 14px; background: white; padding: 18px; border-radius: 14px; box-shadow: var(--shadow); }
+.about-feature-icon { font-size: 1.8rem; }
+.about-feature h4 { font-size: 1rem; color: var(--navy); margin-bottom: 2px; }
+.about-feature p { font-size: 0.85rem; color: var(--gray); }
+
+/* ── OFFERS BANNER ── */
+.offers-banner {
+  background: linear-gradient(135deg, var(--green) 0%, var(--green-dark) 100%);
+  color: white; text-align: center; padding: 50px 5%;
+}
+.offers-banner h2 { font-size: 2rem; margin-bottom: 10px; }
+.offers-banner p { font-size: 1rem; opacity: 0.9; margin-bottom: 24px; }
+.offers-grid { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 30px; }
+.offer-chip {
+  background: rgba(255,255,255,0.18); border: 1.5px solid rgba(255,255,255,0.4);
+  padding: 10px 22px; border-radius: 30px; font-weight: 600; font-size: 0.92rem;
+}
+
+/* ── FLOATING BTNS ── */
+.floating-btns {
+  position: fixed; bottom: 24px; right: 20px; z-index: 999;
+  display: flex; flex-direction: column; gap: 10px; align-items: flex-end;
+}
+.fab {
+  display: flex; align-items: center; gap: 8px;
+  padding: 12px 18px; border-radius: 30px; font-weight: 600; font-size: 0.88rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.22); cursor: pointer; text-decoration: none;
+  transition: all 0.2s;
+}
+.fab:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(0,0,0,0.28); }
+.fab-wa { background: #25D366; color: white; }
+.fab-call { background: var(--blue); color: white; }
+
+/* ── FOOTER ── */
+footer {
+  background: var(--navy); color: rgba(255,255,255,0.8);
+  padding: 50px 5% 30px;
+}
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+.footer-brand .nav-logo-text { font-size: 1.4rem; display: block; margin-bottom: 12px; }
+.footer-brand p { font-size: 0.88rem; line-height: 1.65; opacity: 0.75; margin-bottom: 16px; }
+.footer-col h4 { font-family: 'Rajdhani', sans-serif; font-size: 1.05rem; color: white; margin-bottom: 14px; letter-spacing: 0.04em; }
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.footer-col ul a { text-decoration: none; color: rgba(255,255,255,0.7); font-size: 0.88rem; transition: color 0.2s; }
+.footer-col ul a:hover { color: #6be88b; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,0.12); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: gap; gap: 12px; }
+.footer-bottom p { font-size: 0.82rem; opacity: 0.6; }
+
+/* ── PAGE HEADER ── */
+.page-header {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--blue-dark) 100%);
+  color: white; padding: 50px 5% 40px; text-align: center;
+}
+.page-header h1 { font-size: 2.4rem; margin-bottom: 8px; }
+.page-header p { opacity: 0.8; font-size: 1rem; }
+.breadcrumb { display: flex; justify-content: center; gap: 8px; font-size: 0.85rem; opacity: 0.65; margin-top: 8px; }
+.breadcrumb a { color: white; text-decoration: none; }
+
+/* ── ENQUIRY FLOATING FORM ── */
+.enquiry-strip {
+  background: var(--blue-light); padding: 24px 5%; display: flex; align-items: center;
+  justify-content: space-between; gap: 20px; flex-wrap: wrap;
+}
+.enquiry-strip p { font-weight: 600; color: var(--blue-dark); font-size: 1.02rem; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .nav-links, .nav-cta { display: none; }
+  .hamburger { display: flex; }
+  .hero { grid-template-columns: 1fr; gap: 30px; }
+  .hero-visual { display: none; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .about-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 550px) {
+  .footer-grid { grid-template-columns: 1fr; }
+  .about-stats { grid-template-columns: 1fr 1fr; }
+}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-up { animation: fadeUp 0.5s ease forwards; }
+</style>
+</head>
+<body>
+
+<!-- FLOATING BUTTONS -->
+<div class="floating-btns">
+  <a class="fab fab-wa" href="https://wa.me/919701399937?text=Hello%2C%20I%27m%20interested%20in%20your%20products%2Fservices" target="_blank">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.126 1.535 5.867L0 24l6.335-1.509A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.8 9.8 0 01-4.963-1.349l-.356-.211-3.76.895.952-3.668-.232-.376A9.79 9.79 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+    WhatsApp
+  </a>
+  <a class="fab fab-call" href="tel:+919701399937">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+    Call Us
+  </a>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a class="nav-logo" href="#" onclick="showPage('home')">
+    <div class="nav-logo-text"><span>RENEW</span><span>TECH</span> MARKET</div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#" class="active" onclick="showPage('home'); setActive(this)">Home</a></li>
+    <li><a href="#" onclick="showPage('products'); setActive(this)">Products</a></li>
+    <li><a href="#" onclick="showPage('services'); setActive(this)">Services</a></li>
+    <li><a href="#" onclick="showPage('about'); setActive(this)">About Us</a></li>
+    <li><a href="#" onclick="showPage('contact'); setActive(this)">Contact</a></li>
+  </ul>
+  <div class="nav-cta">
+    <a class="btn btn-whatsapp" href="https://wa.me/919701399937" target="_blank">
+      💬 WhatsApp
+    </a>
+    <a class="btn btn-blue" href="tel:+919701399937">📞 Call</a>
+  </div>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#" onclick="showPage('home'); closeMenu()">🏠 Home</a>
+  <a href="#" onclick="showPage('products'); closeMenu()">💻 Products</a>
+  <a href="#" onclick="showPage('services'); closeMenu()">🔧 Services</a>
+  <a href="#" onclick="showPage('about'); closeMenu()">ℹ️ About Us</a>
+  <a href="#" onclick="showPage('contact'); closeMenu()">📞 Contact</a>
+  <a class="btn btn-whatsapp" href="https://wa.me/919701399937" target="_blank">💬 WhatsApp Us</a>
+</div>
+
+<!-- ══════════════════════════════ HOME PAGE ══════════════════════════════ -->
+<div id="page-home" class="page active">
+  <div class="spacer"></div>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">✅ Guntur's Trusted Tech Store</div>
+      <h1>Quality <span class="green">Refurbished</span> Tech at <span class="highlight">Best Prices</span></h1>
+      <p>Get certified pre-owned laptops & mobiles with warranty. Expert repair, upgrades & IT services — all under one roof.</p>
+      <div class="hero-btns">
+        <a class="btn btn-green btn-lg" href="#" onclick="showPage('products')">🛒 Browse Products</a>
+        <a class="btn btn-whatsapp btn-lg" href="https://wa.me/919701399937?text=Hi%2C%20I%20want%20to%20know%20more%20about%20your%20products" target="_blank">💬 WhatsApp Now</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card">
+        <h3>Why choose us?</h3>
+        <div class="trust-items">
+          <div class="trust-item"><div class="trust-icon">🛡️</div><p>6–12 Month Warranty on all products</p></div>
+          <div class="trust-item"><div class="trust-icon">✅</div><p>100% Tested & Quality Checked</p></div>
+          <div class="trust-item"><div class="trust-icon">💰</div><p>Best Price Guarantee</p></div>
+          <div class="trust-item"><div class="trust-icon">⚡</div><p>Same Day Repair Service</p></div>
+          <div class="trust-item"><div class="trust-icon">🎓</div><p>Special Student Discounts</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FEATURED PRODUCTS -->
+  <section>
+    <div class="section-header">
+      <div class="section-label">💻 Featured Products</div>
+      <h2 class="section-title">Handpicked Refurbished Laptops</h2>
+      <p class="section-sub">All laptops are tested, cleaned and come with warranty. Real product images available on request.</p>
+    </div>
+    <div class="products-grid">
+      <div class="product-card">
+        <div class="product-img"><img src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=600&q=80" alt="Dell Latitude 5490" loading="lazy"><div class="product-badge">✅ Tested</div></div>
+        <div class="product-body">
+          <div class="product-name">Dell Latitude 5490</div>
+          <div class="product-specs">
+            <span class="spec-tag">Intel i5 8th Gen</span>
+            <span class="spec-tag">8GB RAM</span>
+            <span class="spec-tag">256GB SSD</span>
+            <span class="spec-tag">14" FHD</span>
+          </div>
+          <div class="product-footer">
+            <div class="product-price">₹18,500</div>
+            <div class="product-warranty">🛡️ 6 Month Warranty</div>
+          </div>
+          <a class="btn btn-whatsapp" style="width:100%;margin-top:12px;justify-content:center;" href="https://wa.me/919701399937?text=Hi%2C%20I%27m%20interested%20in%20Dell%20Latitude%205490" target="_blank">💬 Enquire Now</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img"><img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=600&q=80" alt="HP EliteBook 840 G5" loading="lazy"><div class="product-badge">🔥 Popular</div></div>
+        <div class="product-body">
+          <div class="product-name">HP EliteBook 840 G5</div>
+          <div class="product-specs">
+            <span class="spec-tag">Intel i7 8th Gen</span>
+            <span class="spec-tag">16GB RAM</span>
+            <span class="spec-tag">512GB SSD</span>
+            <span class="spec-tag">14" FHD</span>
+          </div>
+          <div class="product-footer">
+            <div class="product-price">₹24,999</div>
+            <div class="product-warranty">🛡️ 6 Month Warranty</div>
+          </div>
+          <a class="btn btn-whatsapp" style="width:100%;margin-top:12px;justify-content:center;" href="https://wa.me/919701399937?text=Hi%2C%20I%27m%20interested%20in%20HP%20EliteBook%20840%20G5" target="_blank">💬 Enquire Now</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img"><img src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=600&q=80" alt="Lenovo ThinkPad T480" loading="lazy"><div class="product-badge">⭐ Best Value</div></div>
+        <div class="product-body">
+          <div class="product-name">Lenovo ThinkPad T480</div>
+          <div class="product-specs">
+            <span class="spec-tag">Intel i5 8th Gen</span>
+            <span class="spec-tag">8GB RAM</span>
+            <span class="spec-tag">512GB SSD</span>
+            <span class="spec-tag">14" IPS</span>
+          </div>
+          <div class="product-footer">
+            <div class="product-price">₹21,000</div>
+            <div class="product-warranty">🛡️ 6 Month Warranty</div>
+          </div>
+          <a class="btn btn-whatsapp" style="width:100%;margin-top:12px;justify-content:center;" href="https://wa.me/919701399937?text=Hi%2C%20I%27m%20interested%20in%20Lenovo%20ThinkPad%20T480" target="_blank">💬 Enquire Now</a>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:32px;">
+      <a class="btn btn-blue btn-lg" href="#" onclick="showPage('products')">View All Products →</a>
+    </div>
+  </section>
+
+  <!-- OFFERS BANNER -->
+  <div class="offers-banner">
+    <h2>🎉 Special Offers & Deals</h2>
+    <p>Limited-time offers for students, bulk buyers & combo deals!</p>
+    <div class="offers-grid">
+      <div class="offer-chip">🎓 Student Discount – Upto ₹2000 Off</div>
+      <div class="offer-chip">📦 Combo Deals – Laptop + Bag + Mouse</div>
+      <div class="offer-chip">🔧 Free OS Install with Laptop Purchase</div>
+      <div class="offer-chip">💳 Easy EMI Available</div>
+    </div>
+    <a class="btn btn-lg" style="background:white;color:var(--green-dark);" href="https://wa.me/919701399937?text=Tell%20me%20about%20current%20offers" target="_blank">💬 Get Offer on WhatsApp</a>
+  </div>
+
+  <!-- SERVICES PREVIEW -->
+  <section>
+    <div class="section-header">
+      <div class="section-label">🔧 Our Services</div>
+      <h2 class="section-title">Expert Tech Services</h2>
+      <p class="section-sub">Professional laptop repair, upgrades & IT services at affordable rates.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🔧</div>
+        <h3>Laptop Repair</h3>
+        <p>Screen, keyboard, motherboard, charging port & all hardware repairs.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">💾</div>
+        <h3>SSD Upgrade</h3>
+        <p>Speed up your laptop with SSD installation. Old HDD to SSD migration.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🖥️</div>
+        <h3>OS Installation</h3>
+        <p>Windows 10/11, Linux installation with genuine activation & drivers.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🗂️</div>
+        <h3>Data Recovery</h3>
+        <p>Recover lost data from hard drives, SSDs & pen drives efficiently.</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:32px;">
+      <a class="btn btn-green btn-lg" href="#" onclick="showPage('services')">All Services →</a>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="why-section">
+    <div class="section-header">
+      <div class="section-label">⭐ Why Renew Tech Market</div>
+      <h2 class="section-title">Trusted by 1000+ Customers</h2>
+      <p class="section-sub" style="color:rgba(255,255,255,0.75);margin:0 auto 40px;">We are Guntur's go-to destination for affordable, reliable refurbished tech.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card"><div class="icon">🛡️</div><h3>Genuine Warranty</h3><p>Every product comes with a real warranty — no false promises.</p></div>
+      <div class="why-card"><div class="icon">🔍</div><h3>100% Tested</h3><p>All devices are thoroughly inspected before sale.</p></div>
+      <div class="why-card"><div class="icon">💰</div><h3>Best Price</h3><p>Transparent pricing with no hidden charges.</p></div>
+      <div class="why-card"><div class="icon">⚡</div><h3>Quick Service</h3><p>Fast turnaround on repairs — often same day.</p></div>
+      <div class="why-card"><div class="icon">🧑‍💼</div><h3>Expert Team</h3><p>Experienced technicians with years in the field.</p></div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section>
+    <div class="section-header">
+      <div class="section-label">💬 Customer Reviews</div>
+      <h2 class="section-title">What Our Customers Say</h2>
+      <p class="section-sub">Real feedback from satisfied customers across Guntur.</p>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"Bought a Dell laptop from Renew Tech Market. Excellent condition, great price. The team was very helpful and honest. Highly recommend!"</p>
+        <div class="reviewer"><div class="avatar">RK</div><div class="reviewer-info"><strong>Ravi Kumar</strong><span>Guntur</span></div></div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"Got my laptop repaired here. Very fast service and reasonable price. The SSD upgrade made my old laptop super fast. Great work!"</p>
+        <div class="reviewer"><div class="avatar">PS</div><div class="reviewer-info"><strong>Priya Sharma</strong><span>Guntur</span></div></div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"As a student, budget was tight. They gave me a student discount and a great laptop with warranty. Very trustworthy shop!"</p>
+        <div class="reviewer"><div class="avatar">AV</div><div class="reviewer-info"><strong>Arun Varma</strong><span>Guntur</span></div></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════════════════════ PRODUCTS PAGE ══════════════════════════════ -->
+<div id="page-products" class="page">
+  <div class="spacer"></div>
+  <div class="page-header">
+    <h1>💻 Our Products</h1>
+    <p>Refurbished Laptops & Mobiles – All Tested, Warranted & Ready</p>
+    <div class="breadcrumb"><a href="#" onclick="showPage('home')">Home</a> / Products</div>
+  </div>
+
+  <section>
+    <div class="section-header">
+      <div class="section-label">🔥 Laptops</div>
+      <h2 class="section-title">Refurbished Laptops</h2>
+      <p class="section-sub">All laptops tested for performance, battery, display & ports. Real photos available on WhatsApp.</p>
+    </div>
+    <div class="products-grid">
+      <div class="product-card"><div class="product-img"><img src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=600&q=80" alt="Dell Latitude 5490" loading="lazy"><div class="product-badge">✅ Tested</div></div><div class="product-body"><div class="product-name">Dell Latitude 5490</div><div class="product-specs"><span class="spec-tag">i5 8th Gen</span><span class="spec-tag">8GB RAM</span><span class="spec-tag">256GB SSD</span><span class="spec-tag">14" FHD</span></div><div class="product-footer"><div class="product-price">₹18,500</div><div class="product-warranty">🛡️ 6 Month</div></div><a class="btn btn-whatsapp" style="width:100%;margin-top:12px;justify-content:center;" href="https://wa.me/919701399937?text=Interested%20in%20Dell%20Latitude%205490" target="_blank">💬 Enquire</a></div></div>
+
+      <div class="product-card"><div class="product-img"><img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=600&q=80" alt="HP EliteBook 840 G5" loading="lazy"><div class="product-badge">🔥 Popular</div></div><div class="product-body"><div class="product-name">HP EliteBook 840 G5</div><div class="product-specs"><span class="spec-tag">i7 8th Gen</span><span class="spec-tag">16GB RAM</span><span class="spec-tag">512GB SSD</span><span class="spec-tag">14" FHD</span></div><div class="product-footer"><div class="product-price">₹24,999</div><div class="product-warranty">🛡️ 6 Month</div></div><a class="btn btn-whatsapp" style="width:100%;margin-top:12px;justify-content:center;" href="https://wa.me/919701399937?text=Interested%20in%20HP%20EliteBook%20840%20G5" target="_blank">💬 Enquire</a></div></div>
+
+      <div class="product-card"><div class="product-img"><img src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=600&q=80" alt="Lenovo ThinkPad T480" loading="lazy"><div class="product-badge">⭐ Best Value</div></div><div class="product-body"><div class="product-name">Lenovo ThinkPad T480</div><div class="product-specs"><span class="spec-tag">i5 8th Gen</span><span class="spec-tag">8GB RAM</span><span class="spec-tag">512GB SSD</span><span class="spec-tag">14" IPS</span></div><div class="product-footer"><div class="product-price">₹21,000</div><div class="product-warranty">🛡️ 6 Month</div></div><a class="btn btn-whatsapp" style="width:100%;margin-top:12px;justify-content:center;" href="https://wa.me/919701399937?text=Interested%20in%20Lenovo%20ThinkPad%20T480" target="_blank">💬 Enquire</a></div></div>
+
+      <div class="product-card"><div class="product-img"><img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600&q=80" alt="HP ProBook 450 G7" loading="lazy"><div class="product-badge">✅ Tested</div></div><div class="product-body"><div class="product-name">HP ProBook 450 G7</div><div class="product-specs"><span class="spec-tag">i5 10th Gen</span><span class="spec-tag">8GB RAM</span><span class="spec-tag">256GB SSD</span><span class="spec-tag">15.6" FHD</span></div><div class="product-footer"><div class="product-price">₹22,500</div><div class="product-warranty">🛡️ 6 Month</div></div><a class="btn btn-whatsapp" style="width:100%;margin-top:12px;justify-content:center;" href="https://wa.me/919701399937?text=Interested%20in%20HP%20ProBook%20450%20G7" target="_blank">💬 Enquire</a></div></div>
+
+      <div class="product-card"><div class="product-img"><img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=600&q=80" alt="Dell Inspiron 15" loading="lazy"><div class="product-badge">🆕 New Arrival</div></div><div class="product-body"><div class="product-name">Dell Inspiron 15 3000</div><div class="product-specs"><span class="spec-tag">i3 10th Gen</span><span class="spec-tag">4GB RAM</span><span class="spec-tag">1TB HDD</span><span class="spec-tag">15.6" HD</span></div><div class="product-footer"><div class="product-price">₹14,000</div><div class="product-warranty">🛡️ 3 Month</div></div><a class="btn btn-whatsapp" style="width:100%;margin-top:12px;justify-content:center;" href="https://wa.me/919701399937?text=Interested%20in%20Dell%20Inspiron%2015%203000" target="_blank">💬 Enquire</a></div></div>
+
+      <div class="product-card"><div class="product-img"><img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=600&q=80" alt="Lenovo IdeaPad 330" loading="lazy"><div class="product-badge">🔥 Hot Deal</div></div><div class="product-body"><div class="product-name">Lenovo IdeaPad 330</div><div class="product-specs"><span class="spec-tag">AMD A9</span><span class="spec-tag">4GB RAM</span><span class="spec-tag">1TB HDD</span><span class="spec-tag">15.6" HD</span></div><div class="product-footer"><div class="product-price">₹11,500</div><div class="product-warranty">🛡️ 3 Month</div></div><a class="btn btn-whatsapp" style="width:100%;margin-top:12px;justify-content:center;" href="https://wa.me/919701399937?text=Interested%20in%20Lenovo%20IdeaPad%20330" target="_blank">💬 Enquire</a></div></div>
+    </div>
+  </section>
+
+  <div class="enquiry-strip">
+    <p>📱 Looking for a specific model? We'll source it for you!</p>
+    <a class="btn btn-whatsapp" href="https://wa.me/919701399937?text=I%20need%20a%20specific%20laptop%20model" target="_blank">💬 Ask on WhatsApp</a>
+  </div>
+
+  <section>
+    <div class="section-header">
+      <div class="section-label">📱 Mobiles</div>
+      <h2 class="section-title">Refurbished Mobiles</h2>
+      <p class="section-sub">Quality checked smartphones at unbeatable prices.</p>
+    </div>
+    <div class="products-grid">
+      <div class="product-card"><div class="product-img"><img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=600&q=80" alt="Samsung Galaxy A52" loading="lazy"><div class="product-badge">✅ Tested</div></div><div class="product-body"><div class="product-name">Samsung Galaxy A52</div><div class="product-specs"><span class="spec-tag">6GB RAM</span><span class="spec-tag">128GB</span><span class="spec-tag">Super AMOLED</span></div><div class="product-footer"><div class="product-price">₹12,000</div><div class="product-warranty">🛡️ 3 Month</div></div><a class="btn btn-whatsapp" style="width:100%;margin-top:12px;justify-content:center;" href="https://wa.me/919701399937?text=Interested%20in%20Samsung%20Galaxy%20A52" target="_blank">💬 Enquire</a></div></div>
+      <div class="product-card"><div class="product-img"><img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=600&q=80" alt="Redmi Note 11 Pro" loading="lazy"><div class="product-badge">🔥 Popular</div></div><div class="product-body"><div class="product-name">Redmi Note 11 Pro</div><div class="product-specs"><span class="spec-tag">6GB RAM</span><span class="spec-tag">128GB</span><span class="spec-tag">AMOLED 120Hz</span></div><div class="product-footer"><div class="product-price">₹10,500</div><div class="product-warranty">🛡️ 3 Month</div></div><a class="btn btn-whatsapp" style="width:100%;margin-top:12px;justify-content:center;" href="https://wa.me/919701399937?text=Interested%20in%20Redmi%20Note%2011%20Pro" target="_blank">💬 Enquire</a></div></div>
+      <div class="product-card"><div class="product-img"><img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=600&q=80" alt="Realme 9 Pro" loading="lazy"><div class="product-badge">⭐ Value Pick</div></div><div class="product-body"><div class="product-name">Realme 9 Pro</div><div class="product-specs"><span class="spec-tag">8GB RAM</span><span class="spec-tag">128GB</span><span class="spec-tag">5G Ready</span></div><div class="product-footer"><div class="product-price">₹11,000</div><div class="product-warranty">🛡️ 3 Month</div></div><a class="btn btn-whatsapp" style="width:100%;margin-top:12px;justify-content:center;" href="https://wa.me/919701399937?text=Interested%20in%20Realme%209%20Pro" target="_blank">💬 Enquire</a></div></div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════════════════════ SERVICES PAGE ══════════════════════════════ -->
+<div id="page-services" class="page">
+  <div class="spacer"></div>
+  <div class="page-header">
+    <h1>🔧 Our Services</h1>
+    <p>Professional Laptop Repair, Upgrade & IT Services in Guntur</p>
+    <div class="breadcrumb"><a href="#" onclick="showPage('home')">Home</a> / Services</div>
+  </div>
+
+  <section>
+    <div class="section-header">
+      <div class="section-label">⚙️ What We Do</div>
+      <h2 class="section-title">Complete Tech Services</h2>
+      <p class="section-sub">Expert technicians, fast turnaround, affordable pricing. WhatsApp us for a quick quote.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card"><div class="service-icon">🔧</div><h3>Laptop Repair</h3><p>Screen replacement, keyboard repair, motherboard service, charging port fix, fan cleaning, and all hardware issues resolved by expert technicians.</p><a class="btn btn-green" style="margin-top:16px;" href="https://wa.me/919701399937?text=I%20need%20laptop%20repair%20service" target="_blank">Get Quote</a></div>
+      <div class="service-card"><div class="service-icon">💾</div><h3>SSD Upgrade</h3><p>Replace your old slow HDD with a fast SSD. Data migration included. Speed up your laptop 5x. Available for all brands and models.</p><a class="btn btn-green" style="margin-top:16px;" href="https://wa.me/919701399937?text=I%20need%20SSD%20upgrade" target="_blank">Get Quote</a></div>
+      <div class="service-card"><div class="service-icon">🖥️</div><h3>OS Installation</h3><p>Windows 10 / Windows 11 installation with genuine activation, all drivers installed, antivirus setup, and performance optimization.</p><a class="btn btn-green" style="margin-top:16px;" href="https://wa.me/919701399937?text=I%20need%20OS%20installation" target="_blank">Get Quote</a></div>
+      <div class="service-card"><div class="service-icon">🗂️</div><h3>Data Recovery</h3><p>Recover lost or deleted files from hard drives, SSDs, pen drives and memory cards. High success rate with quick turnaround.</p><a class="btn btn-green" style="margin-top:16px;" href="https://wa.me/919701399937?text=I%20need%20data%20recovery" target="_blank">Get Quote</a></div>
+      <div class="service-card"><div class="service-icon">🧹</div><h3>Deep Cleaning</h3><p>Internal fan cleaning, thermal paste replacement, heat sink cleaning. Fixes overheating issues and improves performance significantly.</p><a class="btn btn-green" style="margin-top:16px;" href="https://wa.me/919701399937?text=I%20need%20laptop%20deep%20cleaning" target="_blank">Get Quote</a></div>
+      <div class="service-card"><div class="service-icon">🔋</div><h3>Battery Replacement</h3><p>Original compatible batteries available for all major laptop brands including Dell, HP, Lenovo, Acer, and Asus.</p><a class="btn btn-green" style="margin-top:16px;" href="https://wa.me/919701399937?text=I%20need%20battery%20replacement" target="_blank">Get Quote</a></div>
+      <div class="service-card"><div class="service-icon">📶</div><h3>RAM Upgrade</h3><p>Upgrade your RAM from 4GB to 8GB or 16GB. Improve multitasking and overall system performance instantly.</p><a class="btn btn-green" style="margin-top:16px;" href="https://wa.me/919701399937?text=I%20need%20RAM%20upgrade" target="_blank">Get Quote</a></div>
+      <div class="service-card"><div class="service-icon">🔒</div><h3>Antivirus & Security</h3><p>Remove viruses, malware and ransomware. Install and configure reliable antivirus software. Clean up slow computers.</p><a class="btn btn-green" style="margin-top:16px;" href="https://wa.me/919701399937?text=I%20need%20virus%20removal" target="_blank">Get Quote</a></div>
+    </div>
+  </section>
+
+  <div class="offers-banner">
+    <h2>⚡ Quick Service Promise</h2>
+    <p>Most repairs are completed the same day. WhatsApp us your issue for a quick estimate!</p>
+    <a class="btn btn-lg" style="background:white;color:var(--green-dark);" href="https://wa.me/919701399937?text=I%20need%20a%20service%20quote" target="_blank">💬 Get Free Quote</a>
+  </div>
+</div>
+
+<!-- ══════════════════════════════ ABOUT PAGE ══════════════════════════════ -->
+<div id="page-about" class="page">
+  <div class="spacer"></div>
+  <div class="page-header">
+    <h1>ℹ️ About Renew Tech Market</h1>
+    <p>Guntur's Trusted Refurbished Tech Store</p>
+    <div class="breadcrumb"><a href="#" onclick="showPage('home')">Home</a> / About Us</div>
+  </div>
+
+  <section>
+    <div class="about-grid">
+      <div class="about-content">
+        <div class="section-label">🏪 Our Story</div>
+        <h2 class="section-title">Making Quality Tech Affordable</h2>
+        <p class="section-sub">Renew Tech Market was founded with a simple mission: to make quality laptops and technology accessible to everyone in Guntur — students, professionals, and businesses alike.</p>
+        <p style="color:var(--gray);line-height:1.75;margin-bottom:16px;">We understand that not everyone can afford a brand-new laptop. That's why we curate the best refurbished laptops and mobiles — fully tested, cleaned, and backed by warranty — so you get maximum value for your money.</p>
+        <p style="color:var(--gray);line-height:1.75;">Our expert technicians also offer comprehensive repair and upgrade services to extend the life of your existing devices. From SSD upgrades to data recovery, we handle it all with care and expertise.</p>
+        <div class="about-stats">
+          <div class="stat-box"><div class="stat-num">1000+</div><div class="stat-label">Happy Customers</div></div>
+          <div class="stat-box"><div class="stat-num">500+</div><div class="stat-label">Laptops Sold</div></div>
+          <div class="stat-box"><div class="stat-num">3+</div><div class="stat-label">Years Experience</div></div>
+          <div class="stat-box"><div class="stat-num">100%</div><div class="stat-label">Tested Products</div></div>
+        </div>
+      </div>
+      <div class="about-visual">
+        <div class="about-feature"><div class="about-feature-icon">🛡️</div><div><h4>Genuine Warranty</h4><p>Real warranty on every product sold — 3 to 12 months</p></div></div>
+        <div class="about-feature"><div class="about-feature-icon">✅</div><div><h4>Quality Assurance</h4><p>Multi-point quality check on all refurbished devices</p></div></div>
+        <div class="about-feature"><div class="about-feature-icon">💰</div><div><h4>Transparent Pricing</h4><p>What you see is what you pay — no hidden charges</p></div></div>
+        <div class="about-feature"><div class="about-feature-icon">🎓</div><div><h4>Student Friendly</h4><p>Special student discounts with valid ID proof</p></div></div>
+        <div class="about-feature"><div class="about-feature-icon">🤝</div><div><h4>After Sales Support</h4><p>We're just a WhatsApp message away after your purchase</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-section">
+    <div class="section-header">
+      <div class="section-label">⭐ Our Values</div>
+      <h2 class="section-title">What We Stand For</h2>
+      <p class="section-sub" style="color:rgba(255,255,255,0.75);margin:0 auto 40px;"></p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card"><div class="icon">♻️</div><h3>Sustainability</h3><p>Giving gadgets a second life reduces e-waste and helps the environment.</p></div>
+      <div class="why-card"><div class="icon">🤝</div><h3>Honesty</h3><p>We always disclose the condition and history of every device honestly.</p></div>
+      <div class="why-card"><div class="icon">💡</div><h3>Expertise</h3><p>Years of hands-on experience in laptop repair, hardware & software.</p></div>
+      <div class="why-card"><div class="icon">❤️</div><h3>Community</h3><p>Proudly serving the Guntur community with affordable tech.</p></div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════════════════════ CONTACT PAGE ══════════════════════════════ -->
+<div id="page-contact" class="page">
+  <div class="spacer"></div>
+  <div class="page-header">
+    <h1>📞 Contact Us</h1>
+    <p>We're here to help — reach out via WhatsApp, call or visit our store</p>
+    <div class="breadcrumb"><a href="#" onclick="showPage('home')">Home</a> / Contact</div>
+  </div>
+
+  <section>
+    <div class="contact-grid">
+      <div>
+        <div class="section-label">📍 Find Us</div>
+        <h2 class="section-title" style="margin-bottom:24px;">Get In Touch</h2>
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">📱</div>
+            <div>
+              <h4>WhatsApp / Phone</h4>
+              <a href="https://wa.me/919701399937">+91 97013 99937</a><br>
+              <a href="tel:+919490509937" style="font-size:0.9rem;">+91 94905 09937</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div>
+              <h4>Email Us</h4>
+              <a href="/cdn-cgi/l/email-protection#1d6f7873786a69787e75707c6f7678695d7a707c7471337e7270"><span class="__cf_email__" data-cfemail="c9bbaca7acbebdacaaa1a4a8bba2acbd89aea4a8a0a5e7aaa6a4">[email&#160;protected]</span></a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🌐</div>
+            <div>
+              <h4>Website</h4>
+              <a href="https://renewtechmarket.com" target="_blank">renewtechmarket.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <h4>Shop Address</h4>
+              <p>House No. 6-15-188/1, 1st Floor,<br>Ramadevi Nilayam, 16/3 Arundelpet,<br>Opp. Saibaba Temple,<br>GUNTUR - 522 002, Andhra Pradesh</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🕐</div>
+            <div>
+              <h4>Working Hours</h4>
+              <p>Mon – Sat: 9:00 AM – 8:00 PM<br>Sunday: 10:00 AM – 6:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:28px;">
+          <h3 style="font-size:1.15rem;margin-bottom:14px;color:var(--navy);">Reach us instantly</h3>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;">
+            <a class="btn btn-whatsapp btn-lg" href="https://wa.me/919701399937?text=Hello%2C%20I%27d%20like%20to%20know%20more" target="_blank">💬 WhatsApp Now</a>
+            <a class="btn btn-blue btn-lg" href="tel:+919701399937">📞 Call Now</a>
+          </div>
+        </div>
+
+        <!-- Google Maps -->
+        <div style="margin-top:28px;">
+          <h3 style="font-size:1.15rem;margin-bottom:14px;color:var(--navy);">📍 Find Our Store</h3>
+          <div class="map-wrapper">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.3!2d80.4365!3d16.3008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a75ef97a05e5b%3A0x123456789abcdef!2sArundelpet%2C%20Guntur%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000"
+              width="100%" height="260" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <p style="font-size:0.82rem;color:var(--gray);margin-top:8px;">📌 Update your exact pin on Google Maps: <a href="https://business.google.com" target="_blank" style="color:var(--blue);">Google Business Profile</a></p>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h3>✉️ Send an Enquiry</h3>
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="Enter your name" id="f_name">
+        </div>
+        <div class="form-group">
+          <label>Phone / WhatsApp</label>
+          <input type="tel" placeholder="+91 XXXXX XXXXX" id="f_phone">
+        </div>
+        <div class="form-group">
+          <label>Email (Optional)</label>
+          <input type="email" placeholder="your@email.com" id="f_email">
+        </div>
+        <div class="form-group">
+          <label>I'm interested in</label>
+          <select id="f_interest">
+            <option value="">Select...</option>
+            <option>Buying a Laptop</option>
+            <option>Buying a Mobile</option>
+            <option>Laptop Repair</option>
+            <option>SSD Upgrade</option>
+            <option>OS Installation</option>
+            <option>Data Recovery</option>
+            <option>Other Service</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Tell us more about what you need..." id="f_msg"></textarea>
+        </div>
+        <button class="btn btn-whatsapp btn-lg form-submit" onclick="sendToWhatsApp()">💬 Send via WhatsApp</button>
+        <p style="font-size:0.8rem;color:var(--gray);margin-top:10px;text-align:center;">Clicking above will open WhatsApp with your message pre-filled</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════════════════════ FOOTER ══════════════════════════════ -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="nav-logo-text"><span style="color:#6be88b;">RENEW</span><span style="color:#7db8ff;">TECH</span> MARKET</span>
+      <p>Guntur's trusted store for quality refurbished laptops, mobiles, and expert tech repair services. Tested, warranted & affordable.</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <a class="btn btn-whatsapp" href="https://wa.me/919701399937" target="_blank" style="font-size:0.85rem;padding:8px 14px;">💬 WhatsApp</a>
+        <a class="btn btn-blue" href="tel:+919701399937" style="font-size:0.85rem;padding:8px 14px;">📞 Call</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#" onclick="showPage('home')">🏠 Home</a></li>
+        <li><a href="#" onclick="showPage('products')">💻 Products</a></li>
+        <li><a href="#" onclick="showPage('services')">🔧 Services</a></li>
+        <li><a href="#" onclick="showPage('about')">ℹ️ About Us</a></li>
+        <li><a href="#" onclick="showPage('contact')">📞 Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Our Services</h4>
+      <ul>
+        <li><a href="#" onclick="showPage('services')">Laptop Repair</a></li>
+        <li><a href="#" onclick="showPage('services')">SSD Upgrade</a></li>
+        <li><a href="#" onclick="showPage('services')">OS Installation</a></li>
+        <li><a href="#" onclick="showPage('services')">Data Recovery</a></li>
+        <li><a href="#" onclick="showPage('services')">Battery Replacement</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="/cdn-cgi/l/email-protection#0d7f6863687a79686e65606c7f6668794d6a606c6461236e6260">📧 <span class="__cf_email__" data-cfemail="7e0c1b101b090a1b1d16131f0c151b0a3e19131f1712501d1113">[email&#160;protected]</span></a></li>
+        <li><a href="https://wa.me/919701399937">💬 WhatsApp Us</a></li>
+        <li><a href="tel:+919701399937">📞 +91 97013 99937</a></li>
+        <li><a href="tel:+919490509937">📞 +91 94905 09937</a></li>
+        <li><a href="https://renewtechmarket.com">🌐 renewtechmarket.com</a></li>
+        <li><span style="color:rgba(255,255,255,0.6);">📍 Arundelpet, Guntur, AP</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Renew Tech Market. All rights reserved. | Guntur, Andhra Pradesh</p>
+    <p>🔍 Refurbished Laptops Guntur | Laptop Repair Arundelpet</p>
+  </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+// Page navigation
+function showPage(name) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  const target = document.getElementById('page-' + name);
+  if (target) { target.classList.add('active'); window.scrollTo({top:0, behavior:'smooth'}); }
+}
+
+// Active nav link
+function setActive(el) {
+  document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+  el.classList.add('active');
+  return false;
+}
+
+// Mobile menu
+function toggleMenu() {
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+function closeMenu() {
+  document.getElementById('mobileMenu').classList.remove('open');
+}
+
+// WhatsApp form
+function sendToWhatsApp() {
+  const name = document.getElementById('f_name').value || 'Customer';
+  const phone = document.getElementById('f_phone').value || 'Not provided';
+  const interest = document.getElementById('f_interest').value || 'General enquiry';
+  const msg = document.getElementById('f_msg').value || '';
+  const text = `Hello Renew Tech Market!%0A%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AInterested in: ${encodeURIComponent(interest)}%0AMessage: ${en
